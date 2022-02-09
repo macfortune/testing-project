@@ -23,7 +23,7 @@ app.use(express.static('public'))///import static files
 
 app.use('/api/students', routes)
 
-app.get('/home', (req, res) =>{
+app.get('/', (req, res) =>{///change '/home' to ''.
     res.render('index')
 })
 const PORT = process.env.PORT || 8080;
